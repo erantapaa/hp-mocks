@@ -9,7 +9,10 @@ from _file_util import read_file, write_file
 import os.path
 
 import os, sys
-topdir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+bindir = os.path.dirname(__file__)
+topdir = os.path.dirname(os.path.abspath(bindir))
+
+os.chdir(bindir)
 
 # Where the url '/' resolves to.
 # This should have a subdirectory 'static/' which contains all of the
