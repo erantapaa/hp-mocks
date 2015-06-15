@@ -1,0 +1,122 @@
+#!/usr/bin/env python
+#
+# Generate the Haskell Platform mock-ups into ../web/html/
+#
+# Usage: ./build-pages
+
+from _page import Page, make_template
+from _file_util import read_file, write_file
+import os.path
+
+import os, sys
+topdir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+
+# Where the url '/' resolves to.
+# This should have a subdirectory 'static/' which contains all of the
+# referenced static assets.
+SITE_ROOT = os.path.join(topdir, "web")
+
+# Where Haskell Platform pages should be placed
+HP_TOP = None # defined by main(), needed by write_html
+
+Crumbs = {
+  'Haskell Platform': 'hp.html',
+}
+
+def hs_template():
+  return make_template( read_file("template.html") )
+
+def make_directory(path):
+ if not os.path.isdir(path):
+   os.makedirs(path)
+   if not os.path.isdir(path):
+     raise "unable to create directory " + path
+
+def check_site_root(path):
+  """Check that a directory is a valid for a site root."""
+  if not os.path.isdir(path):
+    raise "SITE_ROOT directory does not exist: " + path
+  static_dir = os.path.join(path, "static")
+  if not os.path.isdir( static_dir ):
+    raise "SITE_ROOT directory does not have static sub-directory: " + static_dir
+
+def write_html(dest, contents):
+  """Write a page to the HTML directory."""
+  path = os.path.join(HP_TOP, dest)
+  write_file( path, contents )
+  print "Wrote {} bytes to {}".format( len(contents), path )
+
+def script_tag(url):
+  return '<script src="{}"></script>'.format(url)
+
+def crumbs(*cs):
+  s = '<div class="container"><ol class="breadcrumb">'
+  for c in cs:
+    href = Crumbs.get(c,"#")
+    s += '  <li><a href="{}">{}</a>'.format(href, c)
+  s += '</ol></div>'
+  s += '\n'
+  return s
+
+def download_page(include_banner = True, include_crumbs = True):
+  p = hs_template()
+
+  p.add_css("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+  p.add_css("css/download.css")
+
+  p.body_class("page-home js user-platform-known")
+
+  if include_banner:
+    p.append_body( read_file("download-banner.html") )
+
+  if include_crumbs:
+    p.append_body( crumbs("Haskell Platform", "Download") )
+
+  p.append_body( read_file("download-body.html") )
+  p.append_epilogue( script_tag('js/download.js') )
+  return p.compose()
+
+def hp_front_page():
+  p = hs_template()
+  p.append_body( read_file("hp-body.html") )
+  return p.compose()
+
+def contents_page(include_head = True):
+  p = hs_template()
+  p.add_css("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+  p.add_css("css/haskell-font-style.css")
+  p.add_css("css/contents.css")
+
+  if include_head:
+    p.append_body( read_file('contents-head.html') )
+
+  p.append_body( crumbs("Haskell Platform", "Contents") )
+
+  p.append_body( read_file("contents-body.html") )
+
+  p.append_epilogue( script_tag('js/contents.js') )
+  p.body_class("page-home")
+  return p.compose()
+
+def prior_releases():
+  p = hs_template()
+  p.append_body( crumbs("Haskell Platform", "Prior Releases") )
+  p.append_body( read_file("prior-releases.html") )
+  return p.compose()
+
+def main(argv):
+  html_subdir = 'html'
+
+  check_site_root(SITE_ROOT)
+  global HP_TOP
+  HP_TOP = os.path.join(SITE_ROOT, html_subdir)
+  make_directory(HP_TOP)
+
+  write_html("download.html",           download_page() )
+  write_html("download-no-banner.html", download_page(include_banner = False) )
+  write_html("hp.html",                 hp_front_page() )
+  write_html("contents-no-head.html",   contents_page(False) )
+  write_html("contents.html",           contents_page(True) )
+  write_html("prior-releases.html",     prior_releases())
+
+main(sys.argv)

@@ -1,0 +1,779 @@
+<!DOCTYPE html> <!-- -*- mode: web-mode; engine: ctemplate -*- -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Haskell Platform - Included Packages</title>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/contents.js"></script>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/fonts/Haskell/style.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/hl.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/contents.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Haskell Platform is a Haskell distribution with batteries included">
+    </head>
+    <body class="page-home">
+        <div class="wrap">
+            <div class="template">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
+                                <span class="logo">&#xe600;</span>
+                                Haskell
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">Downloads</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Learn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span12 col-md-12">
+                                <div class="branding">
+                                    <span style="background-image: url(img/logo.png)" class="name">Haskell Platform</span>
+                                    <span class="summary">
+                                        Haskell with batteries included
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="span6 col-md-6">
+                                <div class="branding">
+                                    <span class="tag"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <h2>Included Packages</h2>
+                    <p>
+                        Along with a compiler and basic development environment, Haskell Platform provides
+                        a variety of widely-used packages from <a href="http://hackage.haskell.org/">Hackage</a>, the
+                        Haskell package repository.
+                    </p>
+                    <p>
+                        If you are a library author and would like to see your
+                        package included in Haskell Platform, see the
+                        <a href="https://github.com/haskell/haskell-platform/wiki/AddingPackages">Wiki</a>
+                        for the package proposal procedure.
+                    </p>
+
+                    <div>
+                        <label for="package-filter">Package name:</label>
+                        <input id="package-filter" placeholder="Filter by package name">
+                    </div>
+
+                                        <table class="history table">
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                                                <th class="version">7.10.2</th>
+                                                                <th class="version">2015.2.0.0</th>
+                                                                <th class="version">2014.2.0.0</th>
+                                                                <th class="version">2013.2.0.0</th>
+                                                                <th class="version">2012.4.0.0</th>
+                                                                <th class="version">2012.2.0.0</th>
+                                                            </tr>
+                        </thead>
+
+                                                <tbody>
+                            <tr class="section-header"><th colspan="7">Compiler</th></tr>
+
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/ghc">ghc</a></td>
+                                                                <td class="version same current">7.10.1</td>
+                                                                <td class="version update">7.10.1</td>
+                                                                <td class="version update">7.8.3</td>
+                                                                <td class="version update">7.6.2</td>
+                                                                <td class="version update">7.4.2</td>
+                                                                <td class="version update">7.4.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/haddock">haddock</a></td>
+                                                                <td class="version same current">2.16.0</td>
+                                                                <td class="version update">2.16.0</td>
+                                                                <td class="version update">2.14.2</td>
+                                                                <td class="version update">2.13.2</td>
+                                                                <td class="version update">2.11.0</td>
+                                                                <td class="version update">2.10.0</td>
+                                                            </tr>
+                                                    </tbody>
+                                                <tbody>
+                            <tr class="section-header"><th colspan="7">Core Libraries, provided with GHC</th></tr>
+
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/array">array</a></td>
+                                                                <td class="version same current">0.5.1.0</td>
+                                                                <td class="version update">0.5.1.0</td>
+                                                                <td class="version update">0.5.0.0</td>
+                                                                <td class="version same">0.4.0.1</td>
+                                                                <td class="version same">0.4.0.0</td>
+                                                                <td class="version update">0.4.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/base">base</a></td>
+                                                                <td class="version same current">4.8.0.0</td>
+                                                                <td class="version update">4.8.0.0</td>
+                                                                <td class="version update">4.7.0.1</td>
+                                                                <td class="version update">4.6.0.1</td>
+                                                                <td class="version update">4.5.1.0</td>
+                                                                <td class="version update">4.5.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/bytestring">bytestring</a></td>
+                                                                <td class="version same current">0.10.6.0</td>
+                                                                <td class="version update">0.10.6.0</td>
+                                                                <td class="version update">0.10.4.0</td>
+                                                                <td class="version update">0.10.0.2</td>
+                                                                <td class="version same">0.9.2.1</td>
+                                                                <td class="version update">0.9.2.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/Cabal">Cabal</a></td>
+                                                                <td class="version update current">1.22.3.0</td>
+                                                                <td class="version update">1.22.2.0</td>
+                                                                <td class="version update">1.18.1.3</td>
+                                                                <td class="version update">1.16.0</td>
+                                                                <td class="version same">1.14.0</td>
+                                                                <td class="version update">1.14.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/containers">containers</a></td>
+                                                                <td class="version same current">0.5.6.2</td>
+                                                                <td class="version update">0.5.6.2</td>
+                                                                <td class="version update">0.5.5.1</td>
+                                                                <td class="version update">0.5.0.0</td>
+                                                                <td class="version same">0.4.2.1</td>
+                                                                <td class="version update">0.4.2.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/deepseq">deepseq</a></td>
+                                                                <td class="version same current">1.4.1.1</td>
+                                                                <td class="version update">1.4.1.1</td>
+                                                                <td class="version same">1.3.0.2</td>
+                                                                <td class="version same">1.3.0.1</td>
+                                                                <td class="version same">1.3.0.0</td>
+                                                                <td class="version update">1.3.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/directory">directory</a></td>
+                                                                <td class="version same current">1.2.2.0</td>
+                                                                <td class="version update">1.2.2.0</td>
+                                                                <td class="version update">1.2.1.0</td>
+                                                                <td class="version update">1.2.0.1</td>
+                                                                <td class="version same">1.1.0.2</td>
+                                                                <td class="version update">1.1.0.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/extensible-exceptions">extensible-exceptions</a></td>
+                                                                <td class="version missing current">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version same">0.1.1.4</td>
+                                                                <td class="version update">0.1.1.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/filepath">filepath</a></td>
+                                                                <td class="version same current">1.4.0.0</td>
+                                                                <td class="version update">1.4.0.0</td>
+                                                                <td class="version same">1.3.0.2</td>
+                                                                <td class="version same">1.3.0.1</td>
+                                                                <td class="version same">1.3.0.0</td>
+                                                                <td class="version update">1.3.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/haskell2010">haskell2010</a></td>
+                                                                <td class="version missing current">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version update">1.1.2.0</td>
+                                                                <td class="version update">1.1.1.0</td>
+                                                                <td class="version same">1.1.0.1</td>
+                                                                <td class="version update">1.1.0.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/haskell98">haskell98</a></td>
+                                                                <td class="version missing current">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version same">2.0.0.3</td>
+                                                                <td class="version same">2.0.0.2</td>
+                                                                <td class="version same">2.0.0.1</td>
+                                                                <td class="version update">2.0.0.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/hpc">hpc</a></td>
+                                                                <td class="version same current">0.6.0.2</td>
+                                                                <td class="version same">0.6.0.2</td>
+                                                                <td class="version same">0.6.0.1</td>
+                                                                <td class="version update">0.6.0.0</td>
+                                                                <td class="version same">0.5.1.1</td>
+                                                                <td class="version update">0.5.1.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/old-locale">old-locale</a></td>
+                                                                <td class="version same current">1.0.0.7</td>
+                                                                <td class="version same">1.0.0.7</td>
+                                                                <td class="version same">1.0.0.6</td>
+                                                                <td class="version same">1.0.0.5</td>
+                                                                <td class="version same">1.0.0.4</td>
+                                                                <td class="version update">1.0.0.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/old-time">old-time</a></td>
+                                                                <td class="version same current">1.1.0.3</td>
+                                                                <td class="version same">1.1.0.3</td>
+                                                                <td class="version same">1.1.0.2</td>
+                                                                <td class="version same">1.1.0.1</td>
+                                                                <td class="version same">1.1.0.0</td>
+                                                                <td class="version update">1.1.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/pretty">pretty</a></td>
+                                                                <td class="version same current">1.1.2.0</td>
+                                                                <td class="version update">1.1.2.0</td>
+                                                                <td class="version same">1.1.1.1</td>
+                                                                <td class="version same">1.1.1.0</td>
+                                                                <td class="version same">1.1.1.0</td>
+                                                                <td class="version update">1.1.1.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/process">process</a></td>
+                                                                <td class="version same current">1.2.3.0</td>
+                                                                <td class="version update">1.2.3.0</td>
+                                                                <td class="version update">1.2.0.0</td>
+                                                                <td class="version same">1.1.0.2</td>
+                                                                <td class="version same">1.1.0.1</td>
+                                                                <td class="version update">1.1.0.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/template-haskell">template-haskell</a></td>
+                                                                <td class="version same current">2.10.0.0</td>
+                                                                <td class="version update">2.10.0.0</td>
+                                                                <td class="version update">2.9.0.0</td>
+                                                                <td class="version update">2.8.0.0</td>
+                                                                <td class="version same">2.7.0.0</td>
+                                                                <td class="version update">2.7.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/time">time</a></td>
+                                                                <td class="version same current">1.5.0.1</td>
+                                                                <td class="version update">1.5.0.1</td>
+                                                                <td class="version update">1.4.2</td>
+                                                                <td class="version update">1.4.0.1</td>
+                                                                <td class="version same">1.4</td>
+                                                                <td class="version update">1.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/transformers">transformers</a></td>
+                                                                <td class="version same current">0.4.2.0</td>
+                                                                <td class="version update">0.4.2.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version update">0.3.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/unix">unix</a></td>
+                                                                <td class="version same current">2.7.1.0</td>
+                                                                <td class="version update">2.7.1.0</td>
+                                                                <td class="version update">2.7.0.1</td>
+                                                                <td class="version update">2.6.0.1</td>
+                                                                <td class="version same">2.5.1.1</td>
+                                                                <td class="version update">2.5.1.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/Win32">Win32</a></td>
+                                                                <td class="version missing current">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version update">2.3.0.0</td>
+                                                                <td class="version same">2.2.2.0</td>
+                                                                <td class="version update">2.2.2.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/xhtml">xhtml</a></td>
+                                                                <td class="version same current">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version update">3000.2.1</td>
+                                                            </tr>
+                                                    </tbody>
+                                                <tbody>
+                            <tr class="section-header"><th colspan="7">Additional Platform Libraries</th></tr>
+
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/async">async</a></td>
+                                                                <td class="version same current">2.0.2</td>
+                                                                <td class="version update">2.0.2</td>
+                                                                <td class="version same">2.0.1.5</td>
+                                                                <td class="version same">2.0.1.4</td>
+                                                                <td class="version update">2.0.1.3</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/attoparsec">attoparsec</a></td>
+                                                                <td class="version update current">0.13.0.0</td>
+                                                                <td class="version update">0.12.1.4</td>
+                                                                <td class="version same">0.10.4.0</td>
+                                                                <td class="version update">0.10.4.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/case-insensitive">case-insensitive</a></td>
+                                                                <td class="version same current">1.2.0.4</td>
+                                                                <td class="version update">1.2.0.4</td>
+                                                                <td class="version update">1.1.0.3</td>
+                                                                <td class="version update">1.0.0.1</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/cgi">cgi</a></td>
+                                                                <td class="version same current">3001.2.2.2</td>
+                                                                <td class="version update">3001.2.2.1</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version same">3001.1.7.5</td>
+                                                                <td class="version same">3001.1.7.4</td>
+                                                                <td class="version update">3001.1.7.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/exceptions">exceptions</a></td>
+                                                                <td class="version same current">0.8.0.2</td>
+                                                                <td class="version update">0.8.0.2</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/fgl">fgl</a></td>
+                                                                <td class="version same current">5.5.1.0</td>
+                                                                <td class="version update">5.5.1.0</td>
+                                                                <td class="version update">5.5.0.1</td>
+                                                                <td class="version same">5.4.2.4</td>
+                                                                <td class="version same">5.4.2.4</td>
+                                                                <td class="version update">5.4.2.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/GLURaw">GLURaw</a></td>
+                                                                <td class="version same current">1.5.0.1</td>
+                                                                <td class="version update">1.5.0.0</td>
+                                                                <td class="version update">1.4.0.1</td>
+                                                                <td class="version update">1.3.0.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/GLUT">GLUT</a></td>
+                                                                <td class="version same current">2.7.0.1</td>
+                                                                <td class="version update">2.7.0.0</td>
+                                                                <td class="version update">2.5.1.1</td>
+                                                                <td class="version update">2.4.0.0</td>
+                                                                <td class="version same">2.1.2.1</td>
+                                                                <td class="version update">2.1.2.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/hashable">hashable</a></td>
+                                                                <td class="version same current">1.2.3.2</td>
+                                                                <td class="version update">1.2.3.2</td>
+                                                                <td class="version update">1.2.2.0</td>
+                                                                <td class="version update">1.1.2.5</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/haskell-src">haskell-src</a></td>
+                                                                <td class="version same current">1.0.2.0</td>
+                                                                <td class="version update">1.0.2.0</td>
+                                                                <td class="version same">1.0.1.6</td>
+                                                                <td class="version same">1.0.1.5</td>
+                                                                <td class="version same">1.0.1.5</td>
+                                                                <td class="version update">1.0.1.5</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/html">html</a></td>
+                                                                <td class="version same current">1.0.1.2</td>
+                                                                <td class="version same">1.0.1.2</td>
+                                                                <td class="version same">1.0.1.2</td>
+                                                                <td class="version same">1.0.1.2</td>
+                                                                <td class="version same">1.0.1.2</td>
+                                                                <td class="version update">1.0.1.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/HTTP">HTTP</a></td>
+                                                                <td class="version same current">4000.2.19</td>
+                                                                <td class="version update">4000.2.19</td>
+                                                                <td class="version update">4000.2.10</td>
+                                                                <td class="version update">4000.2.8</td>
+                                                                <td class="version update">4000.2.5</td>
+                                                                <td class="version update">4000.2.3</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/HUnit">HUnit</a></td>
+                                                                <td class="version same current">1.2.5.2</td>
+                                                                <td class="version same">1.2.5.2</td>
+                                                                <td class="version same">1.2.5.2</td>
+                                                                <td class="version same">1.2.5.2</td>
+                                                                <td class="version update">1.2.5.1</td>
+                                                                <td class="version update">1.2.4.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/mtl">mtl</a></td>
+                                                                <td class="version same current">2.2.1</td>
+                                                                <td class="version update">2.2.1</td>
+                                                                <td class="version update">2.1.3.1</td>
+                                                                <td class="version same">2.1.2</td>
+                                                                <td class="version update">2.1.2</td>
+                                                                <td class="version update">2.1.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/multipart">multipart</a></td>
+                                                                <td class="version same current">0.1.2</td>
+                                                                <td class="version update">0.1.2</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/network">network</a></td>
+                                                                <td class="version update current">2.6.2.0</td>
+                                                                <td class="version update">2.6.0.2</td>
+                                                                <td class="version update">2.4.2.3</td>
+                                                                <td class="version update">2.4.1.2</td>
+                                                                <td class="version update">2.3.1.0</td>
+                                                                <td class="version update">2.3.0.13</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/network-uri">network-uri</a></td>
+                                                                <td class="version same current">2.6.0.3</td>
+                                                                <td class="version update">2.6.0.1</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/ObjectName">ObjectName</a></td>
+                                                                <td class="version same current">1.1.0.0</td>
+                                                                <td class="version update">1.1.0.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/old-locale">old-locale</a></td>
+                                                                <td class="version same current">1.0.0.7</td>
+                                                                <td class="version same">1.0.0.7</td>
+                                                                <td class="version same">1.0.0.6</td>
+                                                                <td class="version same">1.0.0.5</td>
+                                                                <td class="version same">1.0.0.4</td>
+                                                                <td class="version update">1.0.0.4</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/old-time">old-time</a></td>
+                                                                <td class="version same current">1.1.0.3</td>
+                                                                <td class="version same">1.1.0.3</td>
+                                                                <td class="version same">1.1.0.2</td>
+                                                                <td class="version same">1.1.0.1</td>
+                                                                <td class="version same">1.1.0.0</td>
+                                                                <td class="version update">1.1.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/OpenGL">OpenGL</a></td>
+                                                                <td class="version same current">2.12.0.1</td>
+                                                                <td class="version update">2.12.0.0</td>
+                                                                <td class="version update">2.9.2.0</td>
+                                                                <td class="version update">2.8.0.0</td>
+                                                                <td class="version same">2.2.3.1</td>
+                                                                <td class="version update">2.2.3.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/OpenGLRaw">OpenGLRaw</a></td>
+                                                                <td class="version update current">2.5.0.0</td>
+                                                                <td class="version update">2.4.1.0</td>
+                                                                <td class="version update">1.5.0.0</td>
+                                                                <td class="version update">1.3.0.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/parallel">parallel</a></td>
+                                                                <td class="version same current">3.2.0.6</td>
+                                                                <td class="version same">3.2.0.6</td>
+                                                                <td class="version same">3.2.0.4</td>
+                                                                <td class="version same">3.2.0.3</td>
+                                                                <td class="version same">3.2.0.3</td>
+                                                                <td class="version update">3.2.0.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/parsec">parsec</a></td>
+                                                                <td class="version same current">3.1.9</td>
+                                                                <td class="version update">3.1.9</td>
+                                                                <td class="version update">3.1.5</td>
+                                                                <td class="version same">3.1.3</td>
+                                                                <td class="version update">3.1.3</td>
+                                                                <td class="version update">3.1.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/primitive">primitive</a></td>
+                                                                <td class="version same current">0.6</td>
+                                                                <td class="version update">0.6</td>
+                                                                <td class="version update">0.5.2.1</td>
+                                                                <td class="version same">0.5.0.1</td>
+                                                                <td class="version update">0.5.0.1</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/QuickCheck">QuickCheck</a></td>
+                                                                <td class="version update current">2.8.1</td>
+                                                                <td class="version update">2.8</td>
+                                                                <td class="version same">2.6</td>
+                                                                <td class="version update">2.6</td>
+                                                                <td class="version update">2.5.1.1</td>
+                                                                <td class="version update">2.4.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/random">random</a></td>
+                                                                <td class="version same current">1.1</td>
+                                                                <td class="version update">1.1</td>
+                                                                <td class="version same">1.0.1.1</td>
+                                                                <td class="version same">1.0.1.1</td>
+                                                                <td class="version same">1.0.1.1</td>
+                                                                <td class="version update">1.0.1.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/regex-base">regex-base</a></td>
+                                                                <td class="version same current">0.93.2</td>
+                                                                <td class="version same">0.93.2</td>
+                                                                <td class="version same">0.93.2</td>
+                                                                <td class="version same">0.93.2</td>
+                                                                <td class="version same">0.93.2</td>
+                                                                <td class="version update">0.93.2</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/regex-compat">regex-compat</a></td>
+                                                                <td class="version same current">0.95.1</td>
+                                                                <td class="version same">0.95.1</td>
+                                                                <td class="version same">0.95.1</td>
+                                                                <td class="version same">0.95.1</td>
+                                                                <td class="version same">0.95.1</td>
+                                                                <td class="version update">0.95.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/regex-posix">regex-posix</a></td>
+                                                                <td class="version same current">0.95.2</td>
+                                                                <td class="version same">0.95.2</td>
+                                                                <td class="version same">0.95.2</td>
+                                                                <td class="version same">0.95.2</td>
+                                                                <td class="version update">0.95.2</td>
+                                                                <td class="version update">0.95.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/scientific">scientific</a></td>
+                                                                <td class="version same current">0.3.3.8</td>
+                                                                <td class="version update">0.3.3.8</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/split">split</a></td>
+                                                                <td class="version same current">0.2.2</td>
+                                                                <td class="version same">0.2.2</td>
+                                                                <td class="version same">0.2.2</td>
+                                                                <td class="version update">0.2.2</td>
+                                                                <td class="version update">0.2.1.1</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/StateVar">StateVar</a></td>
+                                                                <td class="version same current">1.1.0.0</td>
+                                                                <td class="version update">1.1.0.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/stm">stm</a></td>
+                                                                <td class="version same current">2.4.4</td>
+                                                                <td class="version update">2.4.4</td>
+                                                                <td class="version same">2.4.2</td>
+                                                                <td class="version update">2.4.2</td>
+                                                                <td class="version update">2.4</td>
+                                                                <td class="version update">2.3</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/syb">syb</a></td>
+                                                                <td class="version update current">0.5.1</td>
+                                                                <td class="version update">0.4.4</td>
+                                                                <td class="version update">0.4.1</td>
+                                                                <td class="version update">0.4.0</td>
+                                                                <td class="version update">0.3.7</td>
+                                                                <td class="version update">0.3.6.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/text">text</a></td>
+                                                                <td class="version update current">1.2.1.1</td>
+                                                                <td class="version update">1.2.0.4</td>
+                                                                <td class="version update">1.1.0.0</td>
+                                                                <td class="version update">0.11.3.1</td>
+                                                                <td class="version same">0.11.2.3</td>
+                                                                <td class="version update">0.11.2.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/tf-random">tf-random</a></td>
+                                                                <td class="version same current">0.5</td>
+                                                                <td class="version update">0.5</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/transformers">transformers</a></td>
+                                                                <td class="version same current">0.4.2.0</td>
+                                                                <td class="version update">0.4.2.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version same">0.3.0.0</td>
+                                                                <td class="version update">0.3.0.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/transformers-compat">transformers-compat</a></td>
+                                                                <td class="version same current">0.4.0.4</td>
+                                                                <td class="version update">0.4.0.4</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/unordered-containers">unordered-containers</a></td>
+                                                                <td class="version same current">0.2.5.1</td>
+                                                                <td class="version update">0.2.5.1</td>
+                                                                <td class="version update">0.2.4.0</td>
+                                                                <td class="version update">0.2.3.0</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/vector">vector</a></td>
+                                                                <td class="version same current">0.10.12.3</td>
+                                                                <td class="version update">0.10.12.3</td>
+                                                                <td class="version update">0.10.9.1</td>
+                                                                <td class="version same">0.10.0.1</td>
+                                                                <td class="version update">0.10.0.1</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/xhtml">xhtml</a></td>
+                                                                <td class="version same current">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version same">3000.2.1</td>
+                                                                <td class="version update">3000.2.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/zlib">zlib</a></td>
+                                                                <td class="version same current">0.5.4.2</td>
+                                                                <td class="version same">0.5.4.2</td>
+                                                                <td class="version same">0.5.4.1</td>
+                                                                <td class="version same">0.5.4.1</td>
+                                                                <td class="version update">0.5.4.0</td>
+                                                                <td class="version update">0.5.3.3</td>
+                                                            </tr>
+                                                    </tbody>
+                                                <tbody>
+                            <tr class="section-header"><th colspan="7">Programs and Tools</th></tr>
+
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/alex">alex</a></td>
+                                                                <td class="version same current">3.1.4</td>
+                                                                <td class="version update">3.1.4</td>
+                                                                <td class="version update">3.1.3</td>
+                                                                <td class="version update">3.0.5</td>
+                                                                <td class="version update">3.0.2</td>
+                                                                <td class="version update">3.0.1</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/cabal-install">cabal-install</a></td>
+                                                                <td class="version update current">1.22.4.0</td>
+                                                                <td class="version update">1.22.2.0</td>
+                                                                <td class="version update">1.18.0.5</td>
+                                                                <td class="version update">0.16.0.2</td>
+                                                                <td class="version same">0.14.0</td>
+                                                                <td class="version update">0.14.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/haddock">haddock</a></td>
+                                                                <td class="version same current">2.16.0</td>
+                                                                <td class="version update">2.16.0</td>
+                                                                <td class="version update">2.14.2</td>
+                                                                <td class="version update">2.13.2</td>
+                                                                <td class="version update">2.11.0</td>
+                                                                <td class="version update">2.10.0</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/happy">happy</a></td>
+                                                                <td class="version same current">1.19.5</td>
+                                                                <td class="version update">1.19.5</td>
+                                                                <td class="version update">1.19.4</td>
+                                                                <td class="version same">1.18.10</td>
+                                                                <td class="version update">1.18.10</td>
+                                                                <td class="version update">1.18.9</td>
+                                                            </tr>
+                                                        <tr class="package">
+                                <td class="package"><a href="http://hackage.haskell.org/package/hscolour">hscolour</a></td>
+                                                                <td class="version update current">1.23</td>
+                                                                <td class="version update">1.22</td>
+                                                                <td class="version update">1.20.3</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                                <td class="version missing">—</td>
+                                                            </tr>
+                                                    </tbody>
+                                            </table>
+                                    </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>
+                    <span class="item">© 2014–2015 haskell.org</span>
+                    <span class="item footer-contribute">
+                        Got changes to contribute?
+                        <a href="https://github.com/haskell-infra/hl"> Fork or comment on Github</a>
+                    </span>
+                    <span class="pull-right">
+                        <span>Proudly hosted by </span>
+                        <a href="https://www.rackspace.com/"><img src="/static/img/rackspace.svg?etag=J84VdDuP" alt="rackspace" height="20" width="20"></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
